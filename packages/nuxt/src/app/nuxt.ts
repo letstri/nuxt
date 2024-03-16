@@ -112,6 +112,8 @@ interface _NuxtApp {
   /** @internal */
   _asyncDataPromises: Record<string, Promise<any> | undefined>
   /** @internal */
+  _abortControllers: Record<string, AbortController>
+  /** @internal */
   _asyncData: Record<string, {
     data: Ref<any>
     pending: Ref<boolean>
